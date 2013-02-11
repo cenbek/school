@@ -2,6 +2,11 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'sqlite3'
+gem 'dm-core'
+gem 'dm-sqlite-adapter'
+gem 'dm-migrations'
+gem 'dm-validations'
+gem 'dm-timestamps'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
