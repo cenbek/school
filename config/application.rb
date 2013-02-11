@@ -58,5 +58,12 @@ module School
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+      config.generators do |g|
+      g.test_framework :mini_test, :spec => true, fixture_replacement: :fabrication
+      g.fixture_replacement :fabrication, dir: "test/fabricators"
+      g.integration_tool :mini_test
+    end
+    
   end
 end
